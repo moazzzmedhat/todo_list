@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import ArchivePage from './components/ArchivePage';
 import CompletedTasksPage from './components/CompletedTasksPage';
@@ -60,7 +60,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/todo_list">
       <div className="App">
         <Routes>
           <Route 
